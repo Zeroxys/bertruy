@@ -5,7 +5,9 @@
     "license": "MIT",
     "author": "Miguel Zavala",
     "scripts" : {
+        "micro": "latest",
         "gulp" : "gulp dev",
+        "dev" : "npm run gulp",
         "start" : "npm run gulp"
     },
     "dependencies": {

@@ -72,6 +72,8 @@
     }
   });
 
-  $('.carousel').carousel()
+  $('.carousel').carousel({
+    interval: 18000
+  })
 
 })(jQuery); // End of use strict

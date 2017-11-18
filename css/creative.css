@@ -307,6 +307,14 @@ header.masthead {
 .service-box {
   max-width: 400px; }
 
+.services {
+  list-style: none;
+  padding: 0; }
+
+.services li {
+  border: 1px solid #cbcbcb;
+  margin: 8px 0 8px 0; }
+
 .portfolio-box {
   position: relative;
   display: block;

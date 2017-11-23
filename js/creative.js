@@ -73,7 +73,7 @@
   });
 
   $('.carousel').carousel({
-    interval: 18000
+    interval: 20000
   })
 
 })(jQuery); // End of use strict

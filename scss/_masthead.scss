@@ -43,7 +43,8 @@ header.masthead {
 }
 
 .logo {
-  border:1px solid red; 
+  width: 700px;
+  height: 300px;
 }
 
 .animation-box {
@@ -118,19 +119,19 @@ header.masthead {
 @keyframes rightFadeInOut {
   0% {
     position: absolute;
-    right: -3rem;
+    right: -2rem;
     opacity: 0;
   }
 
   75% {
     position: absolute;
-    right: 10rem;
+    right: 11rem;
     opacity: 1;
   }
 
   100% {
     opacity: 0;
-    right: 10rem;
+    right: 11rem;
   }
 }
 
@@ -149,25 +150,26 @@ header.masthead {
 }
 
 .first-text {
-  font-size: 4.4rem;
+  font-size: 2rem;
   position: absolute;
   left: 2.5rem;
   top: 5rem;
   opacity: 0;
   animation-name: topFadeOut;
-  animation-duration: 5s;
-  color: white;
+  animation-duration: 8s;
+  color: grey;
 }
 
 .second-text {
-  font-size: 3.4rem;
+  width: 80%;
+  font-size: 1.8rem;
   position: absolute;
   top: 8.5rem;
   opacity: 0;
   animation-name: rightFadeInOut;
-  animation-delay: 3s;
-  animation-duration: 6s;
-  color: #ccc;
+  animation-delay: 8s;
+  animation-duration: 10s;
+  color: grey;
 }
 
 .third-text {
@@ -178,7 +180,7 @@ header.masthead {
   top: 45%;
   opacity: 0;
   animation-name: topFadeOutVertical;
-  animation-delay: 7.5s;
+  animation-delay: 7.2s;
   animation-duration: 6s;
   color: #A3DDF0;
   white-space: nowrap;
@@ -192,7 +194,7 @@ header.masthead {
   opacity: 0;
   color: #F0A3BE;
   animation-name: fadeInOut;
-  animation-delay: 8.5s;
+  animation-delay: 17s;
   animation-duration: 9s;
 }
 
@@ -217,4 +219,23 @@ header.masthead {
 .email:hover{
   color:white;
   text-decoration: none;
+}
+
+
+.placesContent{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.places{
+  list-style: none;
+  color:white;
+  margin:10px;
+  text-decoration: none;
+}
+
+.fbContent{
+  margin-top: 20px;
 }

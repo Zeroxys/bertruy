@@ -2,8 +2,7 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
   background-image: url('../img/testing2.jpg');
-  background-position: center center;
-  //filter: grayscale(0.3); 
+  background-position: center center; 
   @include background-cover;
   hr {
     margin-top: 30px;
@@ -37,14 +36,27 @@ header.masthead {
 }
 
 .profile{
+  background-size:cover;
   height: 350px;
   width: 350px;
   margin:30px 0 30px 0;
+
+  @media(max-width:500px){
+    height: 300px;
+    width: 300px;
+  }
 }
 
 .logo {
+  margin:0;
+  padding:0;
   width: 700px;
   height: 300px;
+
+  @media (max-width:900px) {
+    width : 500px;
+    height: 200px;
+  }
 }
 
 .animation-box {
@@ -190,7 +202,7 @@ header.masthead {
   font-size: 3.4rem;
   position: absolute;
   top: 10.5rem;
-  left: 10%;
+  left: 5%;
   opacity: 0;
   color: #F0A3BE;
   animation-name: fadeInOut;

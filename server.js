@@ -2,6 +2,8 @@ const express = require('express')
 const app = new express()
 const port = 3000 || Process.env.port
 
+app.use(express.static('./'))
+
 app.get('/', (req, res) => {
   res.status(200).send({ ok : 'its ok'})
 })

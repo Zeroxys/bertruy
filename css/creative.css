@@ -430,4 +430,7 @@ header.masthead {
     top: 3.6em; } }
 
 .w-100 {
-  height: 500px; }
+  height: 100%; }
+  @media (max-width: 900px) {
+    .w-100 {
+      height: 380px; } }

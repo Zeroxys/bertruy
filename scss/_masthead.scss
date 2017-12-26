@@ -57,6 +57,11 @@ header.masthead {
     width : 500px;
     height: 200px;
   }
+
+  @media (max-width:900px) {
+    width : 300px;
+    height: 200px;
+  }
 }
 
 .animation-box {
@@ -137,7 +142,7 @@ header.masthead {
 
   75% {
     position: absolute;
-    right: 11rem;
+    right: 9rem;
     opacity: 1;
   }
 
@@ -169,7 +174,11 @@ header.masthead {
   opacity: 0;
   animation-name: topFadeOut;
   animation-duration: 8s;
-  color: white;
+  color: white; 
+
+  @media (max-width: 500px) {
+    font-size : 1rem;
+  }
 }
 
 .second-text {
@@ -182,20 +191,23 @@ header.masthead {
   animation-delay: 8s;
   animation-duration: 10s;
   color: white;
+
+  @media (max-width: 500px) {
+    font-size : 1rem;
+    top: 6rem;
+  }
 }
 
 .third-text {
-  transform: rotate(-90deg);
-  font-size: 2rem;
+  font-size: 3.4rem;
   position: absolute;
-  left: 45%;
-  top: 45%;
+  top: 6rem;
+  left: 0%;
   opacity: 0;
-  animation-name: topFadeOutVertical;
-  animation-delay: 7.2s;
-  animation-duration: 6s;
-  color:white;
-  white-space: nowrap;
+  color: white;
+  animation-name: fadeInOut;
+  animation-delay: 8s;
+  animation-duration: 4s;
 }
 
 .fourth-text {
@@ -208,6 +220,12 @@ header.masthead {
   animation-name: fadeInOut;
   animation-delay: 17s;
   animation-duration: 9s;
+  
+  @media (max-width: 500px) {
+    top: 5rem;
+    left : 0;
+  }
+
 }
 
 .fifth-text {
